@@ -94,7 +94,7 @@ packages:
     source: hosted
     version: "1.8.1"
   sprung:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: sprung
       url: "https://pub.dartlang.org"
