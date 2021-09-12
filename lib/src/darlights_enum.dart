@@ -1,1 +1,1 @@
-enum Darlights { DarlightOne, DarlightTwo, DarlightThree }
+enum Darlights { DarlightThree, DarlightTwo, DarlightOne }

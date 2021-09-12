@@ -1,15 +1,15 @@
-
 import 'package:dark_light_button/src/mixins.dart';
 import 'package:dark_light_button/src/options.dart';
 import 'package:dark_light_button/widgets/switcher.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sprung/sprung.dart';
 
-class DarlightThree extends StatefulWidget {
-  DarlightThree({
+class DarlightOne extends StatefulWidget {
+  DarlightOne({
     Key? key,
     required this.onChange,
-    this.height = 30,
+    this.height = 20,
     required this.duration,
     this.options,
   });
@@ -17,13 +17,13 @@ class DarlightThree extends StatefulWidget {
   final Function(ThemeMode) onChange;
   final double height;
   final Duration duration;
-  final DarlightThreeOption? options;
+  final DarlightOneOption? options;
 
   @override
-  _DarlightThreeState createState() => _DarlightThreeState();
+  _DarlightOneState createState() => _DarlightOneState();
 }
 
-class _DarlightThreeState extends State<DarlightThree>
+class _DarlightOneState extends State<DarlightOne>
     with SingleTickerProviderStateMixin, DarkMixin {
   late AnimationController _controller;
 
@@ -39,14 +39,14 @@ class _DarlightThreeState extends State<DarlightThree>
     super.dispose();
   }
 
-  double get width => widget.height * 2;
+  double get width => widget.height * 2.5;
 
   double get insidePadding => widget.height / 6;
 
-  double get circleRadius => widget.height + insidePadding;
+  double get circleRadius => widget.height + (widget.height / 2);
 
-  DarlightThreeOption _getOption() {
-    return widget.options ?? DarlightThreeOption();
+  DarlightOneOption _getOption() {
+    return widget.options ?? DarlightOneOption();
   }
 
   @override
@@ -60,45 +60,49 @@ class _DarlightThreeState extends State<DarlightThree>
             _controller.reverse();
           }
         },
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(widget.height),
-              child: Container(
-                // duration: widget.duration,
-                height: widget.height,
-                width: width,
-                decoration: BoxDecoration(
-                  color: getColorByTheme(
-                      dark: _getOption().darkBackGroundColor,
-                      light: _getOption().lightBackGroundColor,
-                      context: context),
+        child: Container(
+          width: width,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(widget.height),
+                child: Container(
+                  // duration: widget.duration,
+                  height: widget.height,
+                  width: width,
+                  decoration: BoxDecoration(
+                    color: getColorByTheme(
+                        dark: _getOption().darkBackGroundColor,
+                        light: _getOption().lightBackGroundColor,
+                        context: context),
+                  ),
                 ),
               ),
-            ),
-
-            AnimatedAlign(
-              curve: Sprung(14),
-              duration: widget.duration,
-              alignment: isLightTheme(context)
-                  ? Alignment.centerLeft
-                  : Alignment.centerRight,
-              child: AnimatedContainer(
+              AnimatedAlign(
+                curve: Sprung(14),
                 duration: widget.duration,
-                height: circleRadius,
-                width: circleRadius,
-                decoration: BoxDecoration(
-                    color: getColorByTheme(
-                        dark: _getOption().darkIconColor,
-                        light: _getOption().lightIconColor,
-                        context: context),
-                    shape: BoxShape.circle),
+                alignment: isLightTheme(context)
+                    ? Alignment.centerLeft
+                    : Alignment.centerRight,
+                child: Container(
+                  height: circleRadius,
+                  width: circleRadius,
+                  decoration: BoxDecoration(
+                      color: getColorByTheme(
+                          dark: _getOption().darkIconBackgroundColor,
+                          light: _getOption().lightIconBackgroundColor,
+                          context: context),
+                      shape: BoxShape.circle),
+                  child: Icon(isLightTheme(context)
+                      ? Icons.wb_sunny
+                      : Icons.dark_mode,
+                    color: isLightTheme(context) ? _getOption().lightIconColor : _getOption().darkIconColor,
+                  ),
+                ),
               ),
-            ),
-
-          ],
-        )
-    );
+            ],
+          ),
+        ));
   }
 }

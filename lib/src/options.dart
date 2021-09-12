@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+/// exclusive options for each type of button, named after thw button itself
 abstract class DarlightOption {}
 
-class DarlightOneOption extends DarlightOption {
-  DarlightOneOption({
+class DarlightThreeOption extends DarlightOption {
+  DarlightThreeOption({
     required this.arcFactor,
     this.darkBackGroundColor = const Color(0xff27173a),
     this.lightBackGroundColor = const Color(0xff27173a),
@@ -19,10 +20,10 @@ class DarlightOneOption extends DarlightOption {
   final Color lightMoonColor;
 }
 
-/// https://dribbble.com/shots/10492788-Toggle-animation-Light-Dark-theme
+
 class DarlightTwoOption extends DarlightOption {
   DarlightTwoOption({
-    this.darkBackGroundColor = const Color(0xff374151), //
+    this.darkBackGroundColor = const Color(0xff27173a), //
     this.lightBackGroundColor = Colors.white, //
     this.darkIconColor = const Color(0xffffc207), //
     this.lightIconColor = const Color(0xffffbb52), //
@@ -38,12 +39,12 @@ class DarlightTwoOption extends DarlightOption {
   final Color darkBorderColor;
 }
 
-class DarlightThreeOption extends DarlightOption {
-  DarlightThreeOption({
-    this.darkBackGroundColor = const Color(0xff374151),
+class DarlightOneOption extends DarlightOption {
+  DarlightOneOption({
+    this.darkBackGroundColor = const Color(0xff27173a),
     this.lightBackGroundColor = Colors.white,
-    this.darkIconColor = Colors.white,
-    this.lightIconColor = Colors.black,
+    this.darkIconColor = Colors.black,
+    this.lightIconColor = Colors.orangeAccent,
     this.lightIconBackgroundColor = Colors.black,
     this.darkIconBackgroundColor = Colors.white,
   });

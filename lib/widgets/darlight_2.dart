@@ -62,7 +62,6 @@ class _DarlightTwoState extends State<DarlightTwo>
         child: ClipRRect(
           borderRadius: BorderRadius.circular(widget.height),
           child: Container(
-            // duration: widget.duration,
               height: widget.height,
               width: width,
               decoration: BoxDecoration(
@@ -74,7 +73,6 @@ class _DarlightTwoState extends State<DarlightTwo>
               child: Stack(
                 children: [
                   AnimatedAlign(
-                    // curve: Curves.bounceOut,
                     curve: Sprung(14),
                     duration: widget.duration,
                     alignment: isLightTheme(context)

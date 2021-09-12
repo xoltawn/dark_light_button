@@ -4,11 +4,11 @@ import 'package:dark_light_button/src/options.dart';
 import 'package:dark_light_button/widgets/switcher.dart';
 import 'package:flutter/material.dart';
 
-class DarlightOne extends StatefulWidget {
-  DarlightOne({
+class DarlightThree extends StatefulWidget {
+  DarlightThree({
     Key? key,
     required this.onChange,
-    this.height = 40,
+    this.height = 30,
     required this.duration,
     this.options,
   });
@@ -16,13 +16,13 @@ class DarlightOne extends StatefulWidget {
   final Function(ThemeMode) onChange;
   final double height;
   final Duration duration;
-  final DarlightOneOption? options;
+  final DarlightThreeOption? options;
 
   @override
-  _DarlightOneState createState() => _DarlightOneState();
+  _DarlightThreeState createState() => _DarlightThreeState();
 }
 
-class _DarlightOneState extends State<DarlightOne>
+class _DarlightThreeState extends State<DarlightThree>
     with SingleTickerProviderStateMixin, DarkMixin {
   late AnimationController _controller;
 
@@ -46,8 +46,8 @@ class _DarlightOneState extends State<DarlightOne>
 
   double get secondCircleRadius => circleRadius - insidePadding;
 
-  DarlightOneOption _getOption() {
-    return widget.options ?? DarlightOneOption(arcFactor: 1);
+  DarlightThreeOption _getOption() {
+    return widget.options ?? DarlightThreeOption(arcFactor: 1);
   }
 
   double _convertArcFactor() {
