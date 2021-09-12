@@ -1,4 +1,4 @@
-# url_launcher
+# dark_light_button
 
 A Flutter package for containing ready to use widgets for switching between dark and light theme.
 
