@@ -1,9 +1,6 @@
 name: darlight_example
 description: An example project for dark_light_button package
-
-# Prevent accidental publishing to pub.dev.
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
