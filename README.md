@@ -43,7 +43,8 @@ DarlightButton(
 )
 ```
 
-![Alt text](./darlight_one.gif?raw=true "Title")
+![darlight_one](https://user-images.githubusercontent.com/86798241/133134096-b2b2ada5-ee79-4361-9e89-05f661d589fc.gif)
+
 <hr>
 
 ```
@@ -54,7 +55,7 @@ DarlightButton(
   },
 )
 ```
-![Alt text](./darlight_two.gif?raw=true "Title")
+![darlight_two](https://user-images.githubusercontent.com/86798241/133134185-787e8595-c165-49ee-b42a-41ce47ac3328.gif)
 
 <hr>
 
@@ -67,7 +68,8 @@ DarlightButton(
 )
 ```
 
-![Alt text](./darlight_three.gif?raw=true "Title")
+![darlight_three](https://user-images.githubusercontent.com/86798241/133134224-5e5a9867-dedc-40a0-9185-28911c4b5b89.gif)
+
 
 
 
