@@ -34,7 +34,40 @@ for example, for `Darlights.DarlightThree` you must provide  `DarlightThreeOptio
 each options contain widget-specific properties like background color,etc
 
 ## Examples
+```
+DarlightButton(
+  type: Darlights.DarlightThree,
+  onChange: (ThemeMode theme) {
+              
+  },
+)
+```
 
+![Alt text](./darlight_one.gif?raw=true "Title")
+<hr>
+
+```
+DarlightButton(
+  type: Darlights.DarlightTwo,
+  onChange: (ThemeMode theme) {
+              
+  },
+)
+```
+![Alt text](./darlight_two.gif?raw=true "Title")
+
+<hr>
+
+```
+DarlightButton(
+  type: Darlights.DarlightThree,
+  onChange: (ThemeMode theme) {
+              
+  },
+)
+```
+
+![Alt text](./darlight_three.gif?raw=true "Title")
 
 
 
