@@ -2,6 +2,7 @@
 
 A Flutter package containing ready to use widgets for switching between dark and light theme.
 
+[![pub package](https://img.shields.io/pub/v/dark_light_button.svg)](https://pub.dev/packages/dark_light_button)
 # Installation
 To install this package, add `dark_light_button` as a [dependency in your pubspec.yaml file](https://flutter.dev/platform-plugins/).
 
