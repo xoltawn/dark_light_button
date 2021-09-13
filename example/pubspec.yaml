@@ -20,12 +20,11 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^1.0.0
-#  dark_light_button:
-#    git:
-#      url: https://github.com/xoltawn/dark_light_button.git
-#      ref: main
   dark_light_button:
-    path: ../dark_light_button
+    git:
+      url: https://github.com/xoltawn/dark_light_button.git
+      ref: main
+
 flutter:
   uses-material-design: true
 
