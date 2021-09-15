@@ -119,6 +119,3 @@ class _DarlightTwoState extends State<DarlightTwo>
         ));
   }
 }
-
-
-

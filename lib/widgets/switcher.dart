@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 ///Darlight widgets are placed inside this widget, so changing theme happens here for all darlight widgets
 class DarlightSwitcher extends StatefulWidget {
-  const DarlightSwitcher({Key? key, required this.onChange, required this.child})
+  const DarlightSwitcher(
+      {Key? key, required this.onChange, required this.child})
       : super(key: key);
 
   final Widget child;

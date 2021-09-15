@@ -1,4 +1,3 @@
-
 import 'package:dark_light_button/src/mixins.dart';
 import 'package:dark_light_button/src/options.dart';
 import 'package:dark_light_button/widgets/switcher.dart';
@@ -103,9 +102,9 @@ class _DarlightThreeState extends State<DarlightThree>
                     left: isLightTheme(context)
                         ? -circleRadius
                         : width -
-                        insidePadding -
-                        (circleRadius / _convertArcFactor()) -
-                        secondCircleRadius,
+                            insidePadding -
+                            (circleRadius / _convertArcFactor()) -
+                            secondCircleRadius,
                     duration: widget.duration,
                     child: Container(
                       // margin: EdgeInsets.only(top: insidePadding),

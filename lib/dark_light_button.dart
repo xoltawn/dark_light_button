@@ -12,6 +12,7 @@ import 'package:sprung/sprung.dart';
 export 'package:dark_light_button/src/darlights_enum.dart';
 export 'package:dark_light_button/src/options.dart';
 
+/// this is the widget which is gonna be used to create the buttob by user
 class DarlightButton extends StatelessWidget {
   const DarlightButton({
     Key? key,
@@ -22,10 +23,20 @@ class DarlightButton extends StatelessWidget {
     this.animationDuration,
   }) : super(key: key);
 
+  /// the type of button, which is a enum containing available buttons, you can find the image for each one on the readme file.
   final Darlights type;
+
+  /// callback which specifies the theme , you must put your update theme logic inside this
   final Function(ThemeMode) onChange;
+
+  /// each button type has its own specific options, which is named after the type,
+  /// for example: Darlights.DarlightThree takes DarlightThreeOption as option..
   final DarlightOption? options;
+
+  ///the height of button
   final double? height;
+
+  /// the duration of animation
   final Duration? animationDuration;
 
   @override

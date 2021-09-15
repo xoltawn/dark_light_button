@@ -94,10 +94,11 @@ class _DarlightOneState extends State<DarlightOne>
                           light: _getOption().lightIconBackgroundColor,
                           context: context),
                       shape: BoxShape.circle),
-                  child: Icon(isLightTheme(context)
-                      ? Icons.wb_sunny
-                      : Icons.dark_mode,
-                    color: isLightTheme(context) ? _getOption().lightIconColor : _getOption().darkIconColor,
+                  child: Icon(
+                    isLightTheme(context) ? Icons.wb_sunny : Icons.dark_mode,
+                    color: isLightTheme(context)
+                        ? _getOption().lightIconColor
+                        : _getOption().darkIconColor,
                   ),
                 ),
               ),

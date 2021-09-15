@@ -7,8 +7,8 @@ mixin DarkMixin {
 
   Color getColorByTheme(
       {required Color light,
-        required Color dark,
-        required BuildContext context}) {
+      required Color dark,
+      required BuildContext context}) {
     return isLightTheme(context) ? light : dark;
   }
 }

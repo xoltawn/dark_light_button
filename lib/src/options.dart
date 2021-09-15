@@ -20,7 +20,6 @@ class DarlightThreeOption extends DarlightOption {
   final Color lightMoonColor;
 }
 
-
 class DarlightTwoOption extends DarlightOption {
   DarlightTwoOption({
     this.darkBackGroundColor = const Color(0xff27173a), //

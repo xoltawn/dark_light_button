@@ -29,11 +29,13 @@ class SampleItemListView extends StatelessWidget {
             type: Darlights.DarlightThree,
             onChange: (ThemeMode theme) {
               controller.updateThemeMode(theme);
-            },),
-          const SizedBox(width: 16,)
+            },
+          ),
+          const SizedBox(
+            width: 16,
+          )
         ],
       ),
-
       body: ListView.builder(
         restorationId: 'sampleItemListView',
         itemCount: items.length,
@@ -41,17 +43,16 @@ class SampleItemListView extends StatelessWidget {
           final item = items[index];
 
           return ListTile(
-            title: Text('SampleItem ${item.id}'),
-            leading: const CircleAvatar(
-              foregroundImage: AssetImage('assets/images/flutter_logo.png'),
-            ),
-            onTap: () {
-              Navigator.restorablePushNamed(
-                context,
-                SampleItemDetailsView.routeName,
-              );
-            }
-          );
+              title: Text('SampleItem ${item.id}'),
+              leading: const CircleAvatar(
+                foregroundImage: AssetImage('assets/images/flutter_logo.png'),
+              ),
+              onTap: () {
+                Navigator.restorablePushNamed(
+                  context,
+                  SampleItemDetailsView.routeName,
+                );
+              });
         },
       ),
     );
