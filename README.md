@@ -37,10 +37,11 @@ each options contain widget-specific properties like background color,etc
 ## Examples
 ```dart
   DarlightButton(
-    type: Darlights.DarlightThree,
+    type: Darlights.DarlightOne,
     onChange: (ThemeMode theme) {
 
     },
+    options: DarlightOneOption()
   )
 ```
 
@@ -54,6 +55,7 @@ each options contain widget-specific properties like background color,etc
     onChange: (ThemeMode theme) {
 
     },
+    options: DarlightTwoOption()
   )
 ```
 ![darlight_two](https://user-images.githubusercontent.com/86798241/133134185-787e8595-c165-49ee-b42a-41ce47ac3328.gif)
@@ -66,6 +68,7 @@ each options contain widget-specific properties like background color,etc
     onChange: (ThemeMode theme) {
 
     },
+    options: DarlightThreeOption()
   )
 ```
 
