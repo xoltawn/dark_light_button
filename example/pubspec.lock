@@ -46,12 +46,10 @@ packages:
   dark_light_button:
     dependency: "direct dev"
     description:
-      path: "."
-      ref: main
-      resolved-ref: c1e8645aa5868bce87fd41847ae83dc16321df94
-      url: "https://github.com/xoltawn/dark_light_button.git"
-    source: git
-    version: "0.0.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.1+4"
   fake_async:
     dependency: transitive
     description:

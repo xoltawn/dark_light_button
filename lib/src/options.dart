@@ -55,3 +55,13 @@ class DarlightOneOption extends DarlightOption {
   final Color lightIconBackgroundColor;
   final Color darkIconBackgroundColor;
 }
+
+class DarlightFourOption extends DarlightOption {
+  DarlightFourOption({
+    this.darkIconColor = const Color(0xffffc207), //
+    this.lightIconColor = const Color(0xffffbb52), //
+  });
+
+  final Color darkIconColor;
+  final Color lightIconColor;
+}

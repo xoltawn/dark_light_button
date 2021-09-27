@@ -6,6 +6,7 @@ import 'package:dark_light_button/src/options.dart';
 import 'package:dark_light_button/widgets/darlight_3.dart';
 import 'package:dark_light_button/widgets/darlight_2.dart';
 import 'package:dark_light_button/widgets/darlight_1.dart';
+import 'package:dark_light_button/widgets/darlight_4.dart';
 import 'package:dark_light_button/widgets/switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:sprung/sprung.dart';
@@ -42,15 +43,15 @@ class DarlightButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     switch (type) {
-      case Darlights.DarlightThree:
+      case Darlights.DarlightOne:
         return Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            DarlightThree(
+            DarlightOne(
               onChange: onChange,
-              height: height ?? 30,
-              duration: animationDuration ?? const Duration(milliseconds: 300),
-              options: options as DarlightThreeOption?,
+              height: height ?? 20,
+              duration: animationDuration ?? Duration(milliseconds: 500),
+              options: options as DarlightOneOption?,
             )
           ],
         );
@@ -66,15 +67,27 @@ class DarlightButton extends StatelessWidget {
             )
           ],
         );
-      case Darlights.DarlightOne:
+      case Darlights.DarlightThree:
         return Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            DarlightOne(
+            DarlightThree(
               onChange: onChange,
-              height: height ?? 20,
+              height: height ?? 30,
+              duration: animationDuration ?? const Duration(milliseconds: 300),
+              options: options as DarlightThreeOption?,
+            )
+          ],
+        );
+      case Darlights.DarlightFour:
+        return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            DarlightFour(
+              onChange: onChange,
+              height: height ?? 35,
               duration: animationDuration ?? Duration(milliseconds: 500),
-              options: options as DarlightOneOption?,
+              options: options as DarlightFourOption?,
             )
           ],
         );

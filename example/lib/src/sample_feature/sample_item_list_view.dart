@@ -26,7 +26,12 @@ class SampleItemListView extends StatelessWidget {
         title: const Text('Sample Items'),
         actions: [
           DarlightButton(
-            type: Darlights.DarlightThree,
+            type: Darlights.DarlightFour,
+            height: 30,
+            options: DarlightFourOption(
+              lightIconColor: Colors.red,
+              darkIconColor: Colors.white
+            ),
             onChange: (ThemeMode theme) {
               controller.updateThemeMode(theme);
             },
