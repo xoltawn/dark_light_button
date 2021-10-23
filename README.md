@@ -75,5 +75,19 @@ each options contain widget-specific properties like background color,etc
 ![darlight_three](https://user-images.githubusercontent.com/86798241/133134224-5e5a9867-dedc-40a0-9185-28911c4b5b89.gif)
 
 
+```dart
+  DarlightButton(
+    type: Darlights.DarlightFour,
+    onChange: (ThemeMode theme) {
+
+    },
+    options: DarlightFourOption()
+  )
+```
+
+![darlight_4](https://user-images.githubusercontent.com/86798241/138569689-438e11df-1748-48eb-b621-5356c4a87183.gif)
+
+
+
 
 
