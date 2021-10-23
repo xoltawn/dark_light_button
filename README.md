@@ -74,6 +74,8 @@ each options contain widget-specific properties like background color,etc
 
 ![darlight_three](https://user-images.githubusercontent.com/86798241/133134224-5e5a9867-dedc-40a0-9185-28911c4b5b89.gif)
 
+<hr>
+
 
 ```dart
   DarlightButton(
