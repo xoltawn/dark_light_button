@@ -1,6 +1,6 @@
 name: dark_light_button
 description: A package containing ready to use widgets for switching between dark and light theme
-version: 0.0.1+4
+version: 0.0.2
 homepage: https://github.com/xoltawn/dark_light_button
 
 environment:
