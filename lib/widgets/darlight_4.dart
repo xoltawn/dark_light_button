@@ -73,7 +73,7 @@ class _DarlightFourState extends State<DarlightFour>
                           isLightTheme(context)
                               ? 'assets/images/day.png'
                               : 'assets/images/night.png',
-                          package: 'dark_light_button'))
+                          package: 'dark_light_button'),fit: BoxFit.cover)
                     ),
                   ),
                   AnimatedAlign(

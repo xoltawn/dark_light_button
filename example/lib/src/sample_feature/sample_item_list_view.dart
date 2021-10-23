@@ -28,10 +28,6 @@ class SampleItemListView extends StatelessWidget {
           DarlightButton(
             type: Darlights.DarlightFour,
             height: 30,
-            options: DarlightFourOption(
-              lightIconColor: Colors.red,
-              darkIconColor: Colors.white
-            ),
             onChange: (ThemeMode theme) {
               controller.updateThemeMode(theme);
             },
