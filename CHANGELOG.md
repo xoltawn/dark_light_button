@@ -6,3 +6,6 @@ first release
 
 readme file edited
 
+## 0.0.2
+
+DarlightFour button added
